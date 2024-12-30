@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Project Introduction - Pollution Management</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ff6e7f, #bfe9ff); /* Gradient background from pink to purple */
+      color: #333;
+      transition: background 0.5s ease-in-out;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff6e7f, #bfe9ff);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.1);
+      border-top: 3px solid #ff6e7f;
+      border-bottom: 3px solid #ff6e7f;
+    }
+
+    nav ul li {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background: rgba(255, 110, 127, 0.7);
+      color: white;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+      margin: 20px auto;
+      width: 90%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #ff6e7f;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #ff6e7f;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 1rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background: linear-gradient(135deg, #ff6e7f, #bfe9ff);
+      color: white;
+      text-transform: uppercase;
+    }
+
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    tr:hover {
+      background: #f1f1f1;
+      transform: scale(1.01);
+      transition: all 0.3s ease;
+    }
+
+    footer {
+      background: linear-gradient(135deg, pink, #bfe9ff);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      font-size: 1.2rem;
+    }
+
+    footer span {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1> Pollution Management System</h1>
+    
+  </header>
+
+  <main>
+    <section>
+      <h2>Problem Statement</h2>
+      <p>Develop an innovative pollution control system ensuring sustainability and public health.</p>
+    </section>
+
+    <section>
+      <h2>Business Cases Table</h2>
+      <table>
+        <tr>
+          <th>SL. NO</th>
+          <th>Business Idea Identified</th>
+          <th>Description</th>
+          <th>Owner</th>
+          <th>Problem Tool</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Air Pollution Management</td>
+          <td>Develop affordable AI-powered air purifiers for households and offices providing real-time air quality monitoring and filtering.</td>
+          <td>Sahana</td>
+          <td>Graphs(Dijkstra's Algorithm), BST</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Plastic Waste Reduction</td>
+          <td>Create a subscription-based service offering reusable, biodegradable packaging solutions for businesses and individuals.</td>
+          <td>Gurulingamma</td>
+          <td>Hashing, Greedy Algorithm</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Industrial Emission Tracking</td>
+          <td>Develop a blockchain-based platform for tracking and reporting industrial carbon and pollutant emissions.</td>
+          <td>Sahana</td>
+          <td>Linked list, Hashing</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Agricultural Runoff Solution</td>
+          <td>Design eco-friendly, organic alternatives to traditional fertilizers and pesticides, ensuring reduced environmental impact.</td>
+          <td>Rashmi</td>
+          <td>Dynamic Programming</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>E-Waste Recycling</td>
+          <td>Create a platform for collecting, refurbishing, and reselling e-waste or extracting valuable materials.</td>
+          <td>Shrutika</td>
+          <td>Queues</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Water Pollution Monitoring</td>
+          <td>Offer IoT-based water quality monitoring systems to industries, municipalities, and agricultural sectors.</td>
+          <td>Shrutika</td>
+          <td>Heap, Dijkstra's Algorithm</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>City Plan of Ahmednagar</h2><br>
+      <img src="c.jpg" alt="City Plan of Ahmednagar">
+      <br>
+      <h3>SDG Goals</h3>
+      <p>1. Air Pollution Management</p>
+      <ul>
+        <li>Location: High-density residential and industrial areas.</li>
+        <li>Problem: Increase in air pollution levels due to industrial emissions and vehicle traffic.</li>
+        <li>SDG Goal: SDG 11 (Sustainable Cities and Communities) aims to reduce air pollution and improve urban resilience.</li>
+      </ul>
+
+      <p>2. Plastic Waste Reduction</p>
+      <ul>
+        <li>Location: Commercial and industrial areas.</li>
+        <li>Problem: Excessive plastic waste generation, particularly from packaging.</li>
+        <li>SDG Goal: SDG 12 (Responsible Consumption and Production) focuses on reducing waste and promoting sustainable consumption.</li>
+      </ul>
+
+      <p>3. Industrial Emission Tracking</p>
+      <ul>
+        <li>Location: Industrial zones near the outskirts of the city.</li>
+        <li>Problem: High industrial carbon emissions contributing to climate change.</li>
+        <li>SDG Goal: SDG 13 (Climate Action) emphasizes reducing greenhouse gas emissions.</li>
+      </ul>
+
+      <p>4. Agricultural Runoff Solution</p>
+      <ul>
+        <li>Location: Agricultural and peri-urban areas.</li>
+        <li>Problem: Use of chemical fertilizers and pesticides contaminating water sources.</li>
+        <li>SDG Goal: SDG 6 (Clean Water and Sanitation) aims to protect water resources from pollution.</li>
+      </ul>
+
+      <p>5. E-Waste Recycling</p>
+      <ul>
+        <li>Location: Urban and suburban areas with electronic consumer goods.</li>
+        <li>Problem: Growing e-waste from old electronic devices.</li>
+        <li>SDG Goal: SDG 12 (Responsible Consumption and Production) focuses on minimizing e-waste and promoting recycling.</li>
+      </ul>
+
+      <p>6. Water Pollution Monitoring</p>
+      <ul>
+        <li>Location: Industrial, agricultural, and urban areas.</li>
+        <li>Problem: Poor water quality due to untreated waste from industries and agriculture.</li>
+        <li>SDG Goal: SDG 6 (Clean Water and Sanitation) aims to improve water quality and access.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Team Details</h2>
+      <p>Below is a table summarizing team members and the business cases they are working on:</p>
+      <table>
+        <tr>
+          <th>SL. NO</th>
+          <th>Name</th>
+          <th>USN</th>
+          <th>Roll No</th>
+          <th>Business Cases</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Sahana Sulegavi</td>
+          <td>01FE23BCS301</td>
+          <td>448</td>
+          <td>Air Pollution Management<br>Industrial Emission Tracking</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Gurulingamma Birdar</td>
+          <td>01FE23BCS282</td>
+          <td>446</td>
+          <td>Plastic Waste Reduction</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Rashmi Mathapati</td>
+          <td>01FE23BCS300</td>
+          <td>419</td>
+          <td>Agricultural Runoff Solution</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Shrutika Ambure</td>
+          <td>01FE23BCS198</td>
+          <td>431</td>
+          <td>E-Waste Recycling<br>Water Pollution Monitoring</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+</body>
+</html>
